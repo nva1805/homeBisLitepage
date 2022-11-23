@@ -328,3 +328,7 @@ li .navigation__header--subnav {
     font-size: 13px;
     line-height: 18px;
 }
+
+.model {
+    display: none;
+}
