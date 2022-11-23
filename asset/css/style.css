@@ -1,0 +1,326 @@
+.wrapper {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+:hover {
+    background-color: var(--hover-bg);
+}
+:root {
+    --primary-color: #e8ebf1;
+}
+.h4-title {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+.d-flex {
+    display: flex;
+}
+
+.nav {
+    background-color: var(--primary-color);
+}
+
+.navigation {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__logo {
+    flex-basis: 10%;
+}
+
+.navigation__header {
+    flex-basis: 60%;
+}
+
+.navigation__header .navigation__header--list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 13px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navigation__header--item {
+    border-top: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.navigation__header--item:hover {
+    color: #2aacc8;
+    border-top: 2px solid #2aacc8;
+}
+
+.navigation__header--item i {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+li .navigation__header--subnav {
+    list-style: none;
+    display: none;
+    z-index: 3;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    width: 197px;
+    color: #000;
+    font-size: 13px;
+    line-height: 36px;
+    text-transform: capitalize;
+    font-weight: 200;
+    border-bottom: 2px solid #2aacc8;
+}
+
+.navigation__header--subnav li {
+    border-bottom: 1px solid #000;
+    margin: 0 10px 10px 10px;
+}
+
+.navigation__header--subnav li:last-child {
+    border-bottom: none;
+}
+
+.navigation__header--subnav li:hover {
+    color: #2aacc8;
+}
+
+.navigation__header--item:hover ul {
+    display: block;
+}
+
+/* header */
+.header {
+    position: relative;
+    height: 500px;
+    background-color: #81e4ed;
+}
+
+.header__panner {
+    height: 440px;
+    width: 1000px;
+    background-color: #e05936;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.header__panner--content {
+    display: flex;
+    align-items: center;
+}
+
+.header__panner--text {
+    font-size: 35px;
+    width: 325px;
+    margin: 60px 30px 60px 60px;
+    transform: translateY(9%);
+    /* font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Mono', monospace; */
+    font-family: 'Lato', sans-serif;
+}
+
+.header__panner--img img:first-child {
+    height: 400px;
+    transform: translateY(9%);
+}
+
+.header__panner--img img:last-child {
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.header__dot {
+    /* background-color: #fff; */
+    display: flex;
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-35%);
+}
+
+.header__dot .header__dot--item {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #71a3a7;
+    z-index: 3;
+}
+
+.header__dot .active {
+    background-color: #fff;
+
+}
+
+/* middle section */
+.middlesection {
+    height: 300px;
+    background-color: var(--primary-color);
+}
+.middlesection__content {
+    display: flex;
+    justify-content: space-between;
+}
+.middlesection__item {
+    margin-top: 60px;
+}
+.middlesection__item--title {
+    display: flex;
+    align-items: center;
+}
+.middlesection__item--title img{
+    height: 42px;
+    width: 42px;
+    margin-right: 20px;
+}
+.middlesection__item--title h4{
+    transform: translateY(-20%);
+}
+.middlesection__item p {
+    margin-top: 20px;
+    margin-right: 45px;
+    font-size: 13px;
+}
+.middlesection__item--readmore {
+    margin-top: 25px;
+}
+.middlesection__item--readmore i {
+    font-size: 10px;
+    margin-right: 8px;
+}
+.middlesection__item--readmore a {
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* latest works */
+.latest__works--header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest__works--title img {
+    margin-right: 25px;
+}
+.latest__works--router i {
+    margin-left: 15px;
+    color: #81e4ed;
+    cursor: pointer;
+}
+.latest__works--content {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.latest__works--image {
+    height: 180px;
+    position: relative;
+}
+.latest__works--image > img {
+    height: inherit;
+    width: 220px;
+}
+.latest__work--hover {
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2aacc8;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.latest__work--hover img:first-child {
+    margin-right: 5px;
+}
+.latest__works--image:hover .latest__work--hover {
+    display: flex;
+}
+
+
+/* Testimonials &out clients */
+.Testimonials__outclients {
+    height: 300px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.Testimonials {
+    flex-basis: 45%;
+}
+.Testimonials p {
+    margin-top: 25px;
+    margin-bottom: 38px;
+}
+
+
+/* footer */
+.footer {
+    height: 320px;
+    background-color: var(--primary-color);
+}
+.footer__content {
+    justify-content: space-between;
+    height: 260px;
+    padding-top: 33px;
+}
+
+.footer__content > div:first-child {
+    flex-basis: 30%;
+}
+.footer__content > div:nth-child(2) {
+    flex-basis: 10%;
+}
+.footer__content > div:nth-child(3) {
+    flex-basis: 10%;
+}
+.footer__content > div:nth-child(4) {
+    flex-basis: 12%;
+}
+.footer__content > div:nth-child(5) {
+    flex-basis: 15%;
+}
+.footer__content--list li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.footer__content--paragr {
+    padding-top: 25px;
+}
+.footer__content--item h5 {
+    margin-top: 25px;
+}
+.footer__coppyright {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__coppyright > div:first-child {
+    font-size: 13px;
+    line-height: 18px;
+}
