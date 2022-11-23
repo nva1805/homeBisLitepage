@@ -42,7 +42,9 @@
 .navigation__header {
     flex-basis: 60%;
 }
-
+.navigation__header--mobile {
+    display: none;
+}
 .navigation__header .navigation__header--list {
     display: flex;
     justify-content: space-between;
@@ -312,6 +314,8 @@ li .navigation__header--subnav {
 }
 .footer__content--paragr {
     padding-top: 25px;
+    font-size: 14px;
+
 }
 .footer__content--item h5 {
     margin-top: 25px;

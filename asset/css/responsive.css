@@ -1,0 +1,211 @@
+/* Pc */
+@media (min-width: 1024px) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {}
+
+/* table */
+@media (min-width: 46.1875em) and (max-width: 63.9375em) {}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .h4-title {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .navigation__header {
+        display: none;
+    }
+
+    .navigation__header--mobile {
+        display: block;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .header,
+    .header__panner,
+    .header__panner--content,
+    .header__panner--img {
+        width: 100%;
+    }
+
+
+    .header__panner--content {
+        display: block;
+    }
+
+    .header__panner--text h2 {
+        font-size: 20px;
+        padding: 10px 5px 20px 5px;
+    }
+
+    .header__panner--img img:first-child {
+        height: 200px;
+        transform: translateY(20%);
+        margin-left: 130px;
+    }
+
+    .header__panner--img img:last-child {
+        height: 200px;
+        bottom: 116px;
+    }
+
+    .middlesection {
+        width: 100%;
+        height: 100%;
+    }
+
+    .middlesection__content {
+        width: 100%;
+        display: block;
+    }
+
+    .middlesection__item {
+        width: 100%;
+        padding-top: 50px;
+        margin: 0;
+    }
+
+    .middlesection__item--title {
+        justify-content: center;
+        margin: 0;
+        gap: 10px;
+        align-items: center;
+
+    }
+
+    .middlesection__item--title h4 {
+        transform: translateY(0);
+    }
+
+    .middlesection__item--title img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .middlesection__item p {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .middlesection__item--readmore {
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* latest work */
+    .latest__works--header {
+        width: 100%;
+    }
+
+    .latest__works--title {
+        margin-left: 10px;
+    }
+
+    .latest__works--router {
+        display: none;
+    }
+
+    .latest__works--content {
+        display: block;
+        height: 80%;
+    }
+
+    .latest__works--image {
+        height: 100%;
+    }
+
+    .latest__works--image>img {
+        width: 100%;
+        height: unset;
+        margin-bottom: 10px;
+    }
+
+    /* Testimonials & out clients */
+    .Testimonials__outclients {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .Testimonials .h4-title {
+        margin-top: 25px;
+    }
+
+    .Testimonials>p {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    .Testimonials>h5 {
+        font-size: 12px;
+    }
+
+    /* footer */
+    .footer {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer__content {
+        display: block;
+        height: 100%;
+    }
+    .footer__content > div:nth-child(2),
+    .footer__content > div:nth-child(3) {
+        display: none;
+    }
+    .footer__coppyright {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+/* mobile modal */
+    .model {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .model.open {
+        display: block;
+        z-index: 5;
+    }
+    .model-content {
+        background-color: #2aacc8;
+        width: 60%;
+        height: 100%;
+        float: right;
+        animation: modelFadeIn ease-out 0.3s;
+    }
+    .model-content h6 {
+        background-color: var(--primary-color);
+        padding: 35px 0;
+        text-align: center;
+        font-size: 25px;
+        color: #000;
+    }
+    .model-content a {
+        display: block;
+        padding: 20px;
+        border-bottom: 0.5px solid #000;
+        color: #fff;
+        text-decoration: none;
+    }
+    @keyframes modelFadeIn {
+        from {
+            transform: translateX(120px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+}
